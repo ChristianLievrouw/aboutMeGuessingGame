@@ -3,12 +3,12 @@
 console.log('This file is connected.');
 
 var userName = prompt('What is your name?!');
-console.log(userName);
+// console.log(userName);
 
 alert('Hello ' + userName);
 
 var iWasBorn = prompt('Was I born in Charles City, IA? yes/no').toLowerCase();
-console.log(iWasBorn);
+// console.log(iWasBorn);
 
 if(iWasBorn === 'no'){
   alert('You\'re right ' + userName);
@@ -17,7 +17,7 @@ if(iWasBorn === 'no'){
 }
 
 var myChild = prompt('Do I have a daughter? yes/no').toLowerCase();
-console.log(myChild);
+// console.log(myChild);
 
 if(myChild === 'no'){
   alert('You\'re right! I have a son and his name is Liam');
@@ -26,7 +26,7 @@ if(myChild === 'no'){
 }
 
 var myHobby = prompt('Is one of my favorite hobbies drawing? yes/no').toLowerCase();
-console.log(myHobby);
+// console.log(myHobby);
 
 if(myHobby === 'yes'){
   alert('You\'re right ' + userName + ' I love to draw!');
@@ -35,7 +35,7 @@ if(myHobby === 'yes'){
 }
 
 var dreamJob = prompt('Is my dream job to be a software developer for Apple? yes/no').toLowerCase();
-console.log(dreamJob);
+// console.log(dreamJob);
 
 if(dreamJob === 'yes'){
   alert('You\'re correct ' + userName + '!! I could not think of anywhere I would wanna work more');
@@ -44,7 +44,7 @@ if(dreamJob === 'yes'){
 }
 
 var homeTown = prompt('Was I raised in Charles City, IA? yes/no').toLowerCase();
-console.log(homeTown);
+// console.log(homeTown);
 
 if(homeTown === 'yes'){
   alert('You\'re right ' + userName + ', I grew up in Charles City, IA. That is about two hours away from Cedar Rapids, IA');
