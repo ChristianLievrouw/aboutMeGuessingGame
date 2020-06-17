@@ -78,16 +78,28 @@ var guesses = 0;
 var favMovies = ['Black Hawk Down', 'Ready Player One', 'Rubber', 'Platform', 'Zero Dark Thirty'];
 console.log(favMovies);
 
-var movieAnswer = prompt('Guess what five of my favorite movies are?');
-while(guesses < 7){
+
+while(guesses < 6){
+  
+  var correctAnswer = false;
+  var movieAnswer = prompt('Guess what five of my favorite movies are?');
+  
   for (var i = 0; i < favMovies.length; i++) {
     if (movieAnswer === favMovies[i]) {
-      alert('Awesome you know me so well!');
+      console.log(guesses, movieAnswer, 'correct');
+      correctAnswer = true;
       break;
-    }if(movieAnswer === favMovies[i]){
-      alert('Please try again');
+    } else if(movieAnswer !== favMovies[i]){
+      console.log(guesses, movieAnswer, 'incorrect');
+      continue;
     }
   }
+  if(correctAnswer === true) {
+    alert('Awesome movie, absolutely love it.');
+  } else if(correctAnswer === false) {
+    alert('I don\'t think so.');
+  }
+  guesses += 1;
 }
 
 // alert('Thanks for playing ' + userName + 'you got '+ userPoints '/ 7 correct!');
