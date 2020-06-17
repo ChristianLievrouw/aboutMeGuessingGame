@@ -1,12 +1,13 @@
 'use strict';
 //first thing to do
 console.log('This file is connected.');
+
 var userPoints = 0;
 
-var userName = prompt('What is your name?!');
-// console.log(userName);
+// var userName = prompt('What is your name?!');
+// // console.log(userName);
 
-alert('Hello ' + userName);
+// alert('Hello ' + userName);
 
 // var iWasBorn = prompt('Was I born in Charles City, IA? yes/no').toLowerCase();
 // // console.log(iWasBorn);
@@ -54,24 +55,22 @@ alert('Hello ' + userName);
 // }
 
 // alert('Thank you ' + userName + ' for taking the time to get to know me a little more!');
+var userChance = 0;
+var myPick = 3;
 
-var userGuess = prompt('Guess a number between 1 and 10?');
-
-// for(var i=0; i<= 3; i++)
-// if(userGuess > 3){
-//   prompt('To high');
-// } else if(userGuess < 3) {
-//   prompt('To Low');
-// } else {
-//   alert('You got it, The correct answer is 3');
-// }
-
-while(userGuess !== 3){
-  prompt('To high! Try again!');
-} if(userGuess < 3); {
-  prompt('To Low! Try again!');
-} if (userGuess === 3); {
-  alert('Correct the answer was 3');
+while(userChance < 4){
+  var userNumber = prompt('Choose a number between 1 and 10!');
+  userNumber = Number(userNumber);
+  userChance += 1;
+  if(userNumber === myPick){
+    alert('Way to go!!');
+    userPoints += 1;
+    break;
+  }else if(userNumber < myPick){
+    alert('Too low!!');
+  }else if(userNumber > myPick){
+    alert('Too high');
+  }
 }
 
 // alert('Thanks for playing ' + userName + 'you got '+ userPoints '/ 7 correct!');
