@@ -62,7 +62,9 @@ while(userChance < 4){
   var userNumber = prompt('Choose a number between 1 and 10!');
   userNumber = Number(userNumber);
   userChance += 1;
-  if(userNumber === myPick){
+  if(userChance === 4){
+    alert('You are all of of chances');
+  }else if(userNumber === myPick){
     alert('Way to go!!');
     userPoints += 1;
     break;
