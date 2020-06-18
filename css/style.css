@@ -1,8 +1,33 @@
-body {
-  background-color: whitesmoke;
+* {
+  border: dotted;
+}
+header {
+
+}
+main {
+  margin: 0 auto;
+}
+footer {
+
 }
 img {
-  height: 500px;
-  width: auto;
-  border-radius: 8px;
+
+}
+ul {
+
+}
+ol {
+
+}
+.column1 {
+  float: left;
+  padding: 50px;
+}
+.column2 {
+  float: left;
+  padding: 50px;
+}
+.column3 {
+  float: left;
+  padding: 50px;
 }
