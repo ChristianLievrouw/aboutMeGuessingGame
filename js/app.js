@@ -79,6 +79,7 @@ while(userChance < 4){
     alert('Too high');
   }
 }
+
 var guesses = 0;
 var favMovies = ['Black Hawk Down', 'Ready Player One', 'Rubber', 'Platform', 'Zero Dark Thirty'];
 console.log(favMovies);
